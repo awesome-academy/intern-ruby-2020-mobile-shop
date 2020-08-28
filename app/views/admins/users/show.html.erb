@@ -1,0 +1,25 @@
+<main>
+  <div class="container-fluid">
+    <div class="mt-4">
+      <%= link_to t(".back"), admins_users_path, class: "btn btn-success" %>
+      <br>
+      <br>
+      <h1><%= t ".user_detail" %></h1>
+      <br>
+    </div>
+    <dl class="row">
+      <dt class="col-sm-3"><%= t ".name" %></dt>
+      <dd class="col-sm-9">
+        <%= @user.name %>
+      </dd>
+      <dt class="col-sm-3"><%= t ".email" %></dt>
+      <dd class="col-sm-9">
+        <%= @user.email %>
+      </dd>
+      <dt class="col-sm-3"><%= t ".role" %></dt>
+      <dd class="col-sm-9">
+        <%= @user.role %>
+      </dd>
+    </dl>
+  </div>
+</main>

@@ -22,6 +22,9 @@
 })(jQuery);
 
 $(document).ready(function() {
+  $("#alert-message").fadeTo(5000, 500).slideUp(500, function(){
+    $("#alert-message").slideUp(500);
+  });
   $('#select-product').select2({
     placeholder: 'Select an option',
     allowClear: true,

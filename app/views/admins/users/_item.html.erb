@@ -1,0 +1,17 @@
+<tr>
+  <td><%= user.name %></td>
+  <td><%= user.email %></td>
+  <td><%= user.role %></td>
+  <td>
+    <div class="btn-group dropbottom">
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <%= t ".action" %>
+      </button>
+      <div class="dropdown-menu">
+        <%= link_to t(".show"), admins_user_path(user), class: "dropdown-item" %>
+        <%= link_to t(".edit"), edit_admins_user_path(user), class: "dropdown-item" %>
+        <%= button_to t(".delete"), admins_user_path(user), method: :delete, data: {confirm: t(".you_sure?")}, class: "bg-none border-none padding-l-24" %>
+      </div>
+    </div>
+  </td>
+</tr>

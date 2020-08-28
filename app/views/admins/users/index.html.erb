@@ -1,0 +1,35 @@
+<main>
+  <div class="container-fluid">
+    <h1 class="mt-4"><%= t".list_users" %></h1>
+    <%= render "admins/users/form_search" %>
+    <br>
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="table-responsive">
+          <h6 class="text-right">
+            <span><%= t ".counts" %><%= @users.total_count %></span>
+          </h6>
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+            <tr>
+              <th><%= t ".name" %></th>
+              <th><%= t ".email" %></th>
+              <th><%= t ".role" %></th>
+              <th><%= t ".action" %></th>
+            </tr>
+            </thead>
+            <tbody>
+            <%= render partial: "admins/users/item", collection: @users, as: :user %>
+            <div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content"></div>
+              </div>
+            </div>
+            </tbody>
+          </table>
+          <%= paginate @users, theme: "twitter-bootstrap-4" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

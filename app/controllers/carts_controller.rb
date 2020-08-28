@@ -48,6 +48,8 @@ class CartsController < ApplicationController
                         quantity: Settings.quantity_one)
   end
 
+  # rubocop:disable Metrics/AbcSize
+
   def update_sessions_cart
     return unless @exist
 
@@ -72,6 +74,7 @@ class CartsController < ApplicationController
       end
     end
   end
+  # rubocop:enable Metrics/AbcSize
 
   def load_product_ids
     product_ids = []

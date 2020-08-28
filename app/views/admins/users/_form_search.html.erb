@@ -1,0 +1,23 @@
+<%= search_form_for @search, url: admins_users_path do |f| %>
+  <div class="row">
+    <div class="form-group col-3">
+      <%= f.label "name", t(".name") %>
+      <%= f.text_field :name_cont, placeholder: t(".placeholder_name", attr: t(".placeholder_name")), value: params[:q].try(:[], :name_cont), class: "form-control" %>
+    </div>
+    <div class="form-group col-3">
+      <%= f.label "email", t(".email") %>
+      <%= f.text_field :email_eq, placeholder: t(".placeholder_email", attr: t(".placeholder_email")), value: params[:q].try(:[], :email_eq), class: "form-control" %>
+    </div>
+    <div class="form-group col-3">
+      <%= f.label "role_eq", t(".role") %>
+      <%= f.select :role_eq, options_for_select(option_role_select_search, params[:q].try(:[], :role_eq)), {include_blank: t(".choose_role")}, {class: "form-control"} %>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col d-flex justify-content-end">
+      <%= link_to t(".reset"), admins_users_path, class: "btn btn-default" %>
+      <button type="submit" class="btn btn-success"><%= t ".search" %></button>
+    </div>
+  </div>
+<% end %>

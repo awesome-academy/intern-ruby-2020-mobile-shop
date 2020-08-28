@@ -1,0 +1,12 @@
+<main>
+  <div class="container-fluid">
+    <div class="mt-4">
+      <%= link_to t(".back"), admins_users_path, class: "btn btn-success" %>
+      <br>
+      <br>
+      <h1><%= t ".create_user" %></h1>
+      <br>
+    </div>
+    <%= render "admins/users/form" %>
+  </div>
+</main>

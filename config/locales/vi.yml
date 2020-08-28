@@ -125,6 +125,9 @@ vi:
         orders: Đơn hàng
         list_orders: Danh sách đơn hàng
         create_order: Tạo mới đơn hàng
+        users: Người dùng
+        list_users: Danh sách người dùng
+        create_user: Tạo mới người dùng
         login_as: Đăng nhập với
       footer:
         privacy: Chính sách riêng tư
@@ -272,3 +275,60 @@ vi:
         pending: Đang chờ
         handing: Chờ xử lý
         resolved: Hoàn thành
+    users:
+      index:
+        list_users: Danh sách người dùng
+        name: Tên
+        email: Email
+        role: Chức vụ
+        action: Thao tác
+        counts: "Tổng: "
+      form_search:
+        name: Tên
+        placeholder_name: Nhập tên
+        email: Email
+        placeholder_email: Nhập email
+        role: Chức vụ
+        choose_role: Chọn chức vụ
+        user: Người dùng
+        admin: Quản trị viên
+        support: Cộng tác viên
+        logistic: Giao hàng
+        reset: Làm mới
+        search: Tìm kiếm
+      show:
+        name: Tên
+        email: Email
+        role: Chức vụ
+        user: Người dùng
+        admin: Quản trị viên
+        support: Cộng tác viên
+        logistic: Giao hàng
+        back: Quay lại
+      new:
+        back: Quay lại
+        create_user: Tạo mới người dùng
+      edit:
+        back: Quay lại
+        edit_user: Sửa người dùng
+      form:
+        name: Tên
+        placeholder_name: Nhập tên
+        email: Email
+        placeholder_email: Nhập email
+        password: Mật khẩu
+        placeholder_password: Nhập mật khẩu
+        role: Chức vụ
+        choose_role: Chọn chức vụ
+        user: Người dùng
+        admin: Quản trị viên
+        support: Cộng tác viên
+        logistic: Giao hàng
+        back: Quay lại
+        save: Lưu
+      item:
+        delete: Xóa
+        show: Xem
+        edit: Sửa
+        action: Thao tác
+

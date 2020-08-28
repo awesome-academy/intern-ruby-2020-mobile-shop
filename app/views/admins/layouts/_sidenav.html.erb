@@ -31,6 +31,21 @@
           </nav>
         </div>
       </div>
+      <div class="nav">
+        <%= link_to "#", class: "nav-link collapsed #{active_treeview_menu "users", "active"}", id: "userDropdown", "data-role" => "button", data: {toggle: "collapse", target: "#collapseUsers"}, aria: {expanded: true, controls: "collapseLayouts"} do %>
+          <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+          <%= t ".users" %>
+          <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+        <% end %>
+        <div class="collapse <%= active_treeview_menu "users", "show" %>" id="collapseUsers" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+          <nav class="sb-sidenav-menu-nested nav">
+            <%= link_to t(".list_users"), admins_users_path, class: "nav-link #{active_treeview_menu "users", "active"}" %>
+          </nav>
+          <nav class="sb-sidenav-menu-nested nav">
+            <%= link_to t(".create_user"), new_admins_user_path, class: "nav-link #{active_treeview_menu "new", "active"}" %>
+          </nav>
+        </div>
+      </div>
     </div>
     <div class="sb-sidenav-footer">
       <div class="small"><%= t ".login_as" %></div>

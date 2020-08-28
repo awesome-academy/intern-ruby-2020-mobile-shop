@@ -124,6 +124,9 @@ en:
         orders: Order
         list_orders: List orders
         create_order: Create order
+        users: Users
+        list_users: List users
+        create_user: Create user
         login_as: Logged in as
       footer:
         privacy: Privacy Policy
@@ -270,3 +273,58 @@ en:
         pending: Pending
         handing: Handing
         resolved: Resolved
+    users:
+      index:
+        list_users: List users
+        name: Name
+        email: Email
+        role: Role
+        action: Action
+        counts: "Count: "
+      form_search:
+        name: Name
+        placeholder_name: Enter name
+        email: Email
+        placeholder_email: Enter email
+        role: Role
+        choose_role: Choose role
+        user: User
+        admin: Admin
+        support: Support
+        logistic: Logistic
+        reset: Reset
+        search: Search
+      show:
+        name: Name
+        email: Email
+        role: Role
+        user: User
+        admin: Admin
+        support: Support
+        logistic: Logistic
+        back: Back
+      new:
+        back: Back
+        create_user: Create user
+      edit:
+        back: Back
+        edit_user: Edit user
+      form:
+        name: Name
+        placeholder_name: Enter name
+        email: Email
+        placeholder_email: Enter email
+        password: Password
+        placeholder_password: Enter password
+        role: Role
+        choose_role: Choose role
+        user: User
+        admin: Admin
+        support: Support
+        logistic: Logistic
+        back: Back
+        save: Save
+      item:
+        delete: Delete
+        edit: Edit
+        show: Show
